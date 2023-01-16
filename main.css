@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-color: #1852A8;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.container {
+    max-width: 45rem;
+    margin: auto;
+    padding: 0px 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+nav li {
+    list-style: none;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #F87472;
+}
+
+li::before { 
+    content: "/"
+}
+
+h1 {
+    color: #F87472;
+    width: fit-content;
+    margin: 5rem auto 0px;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.code {
+    color: white;
+    max-width: 42ch;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+p.code::before {
+    content: "<";
+    color: #F87472;
+}
+
+p.code::after {
+    content: "/>";
+    color: #F87472;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: solid #F87472 1.5px;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+li.code {
+    list-style-type: none;
+    padding: 0.5rem;
+    font-weight: 100;
+    color: #F87472;
+}
+
+li.code::before {
+    content: "<";
+    color: white;
+}
+
+li.code::after {
+    content: "/>";
+    color: white;
+}
+
+.spacer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.marca {
+    width: 10rem;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a {
+    padding: 1rem;
+}
